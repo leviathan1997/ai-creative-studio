@@ -17,7 +17,7 @@ function GenerateImage() {
     setTextResponse(null);
 
     try {
-      const response = await fetch('https://ai-creative-studio.onrender.com/generate-image', {
+      const response = await fetch('https://ai-creative-studio-backend-692540646405.europe-west1.run.app/generate-image', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

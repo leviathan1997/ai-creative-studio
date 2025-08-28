@@ -15,13 +15,15 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",  # React frontend default port
     "http://127.0.0.1:3000",
+    "https://pumpbanana-frontend.onrender.com", # Canlı frontend URL'si eklendi
+    "https://ai-creative-studio.onrender.com" # Backend'in kendi URL'si (gerekirse)
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"], # Tüm HTTP metodlarına izin ver
     allow_headers=["*"],
 )
 
