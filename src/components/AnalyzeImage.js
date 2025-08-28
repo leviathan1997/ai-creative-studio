@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Form, Button, Spinner, Alert, Image, Row, Col } from 'react-bootstrap';
+import { Container, Form, Button, Spinner, Alert, Image } from 'react-bootstrap';
 
 function AnalyzeImage() {
   const [selectedFile, setSelectedFile] = useState(null);
