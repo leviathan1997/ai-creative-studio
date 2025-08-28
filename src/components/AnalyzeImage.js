@@ -37,7 +37,7 @@ function AnalyzeImage() {
     formData.append('prompt', prompt);
 
     try {
-      const response = await fetch('http://localhost:8000/analyze-image', {
+      const response = await fetch('https://ai-creative-studio.onrender.com/analyze-image', {
         method: 'POST',
         body: formData,
       });

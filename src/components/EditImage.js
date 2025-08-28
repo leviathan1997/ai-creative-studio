@@ -38,7 +38,7 @@ function EditImage() {
     formData.append('prompt', prompt);
 
     try {
-      const response = await fetch('http://localhost:8000/edit-image', {
+      const response = await fetch('https://ai-creative-studio.onrender.com/edit-image', {
         method: 'POST',
         body: formData,
       });
